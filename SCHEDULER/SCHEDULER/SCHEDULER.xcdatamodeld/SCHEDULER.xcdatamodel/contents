@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24D70" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Member" representedClassName="Member" syncable="YES">
+        <attribute name="availableDays" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="requireRole" optional="YES" attributeType="String"/>
+        <attribute name="role" optional="YES" attributeType="String"/>
+        <relationship name="scheduledEvents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ScheduledEvent" inverseName="assignedMembers" inverseEntity="ScheduledEvent"/>
+    </entity>
+    <entity name="ScheduledEvent" representedClassName="ScheduledEvent" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="teamName" optional="YES" attributeType="String"/>
+        <relationship name="assignedMembers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Member" inverseName="scheduledEvents" inverseEntity="Member"/>
+    </entity>
+    <entity name="WorshipTeamConfig" representedClassName="WorshipTeamConfig" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="roles" optional="YES" attributeType="String"/>
+        <attribute name="singerCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+</model>

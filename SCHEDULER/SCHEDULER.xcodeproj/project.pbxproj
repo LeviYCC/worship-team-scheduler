@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5DF3712D81327A0024FA60 /* Member+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF36D2D81327A0024FA60 /* Member+CoreDataProperties.swift */; };
+		4C5DF3722D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF36F2D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift */; };
+		4C5DF3742D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF36E2D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift */; };
+		4C5DF3982D813D4F0024FA60 /* Member+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF3962D813D4F0024FA60 /* Member+CoreDataClass.swift */; };
+		4C688AF82D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C688AF62D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift */; };
+		4C688AF92D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C688AF72D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C238DB92D61B51A0030976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C238D9A2D61B5180030976A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C238DA12D61B5180030976A;
+			remoteInfo = SCHEDULER;
+		};
+		4C238DC32D61B51A0030976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C238D9A2D61B5180030976A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C238DA12D61B5180030976A;
+			remoteInfo = SCHEDULER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C238DA22D61B5180030976A /* SCHEDULER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCHEDULER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C238DB82D61B51A0030976A /* SCHEDULERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCHEDULERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C238DC22D61B51A0030976A /* SCHEDULERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCHEDULERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5DF36D2D81327A0024FA60 /* Member+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Member+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C5DF36E2D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduledEvent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C5DF36F2D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduledEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C5DF3962D813D4F0024FA60 /* Member+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Member+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C688AF62D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorshipTeamConfig+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C688AF72D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorshipTeamConfig+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4C238DA42D61B5180030976A /* SCHEDULER */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SCHEDULER;
+			sourceTree = "<group>";
+		};
+		4C238DBB2D61B51A0030976A /* SCHEDULERTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SCHEDULERTests;
+			sourceTree = "<group>";
+		};
+		4C238DC52D61B51A0030976A /* SCHEDULERUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SCHEDULERUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C238D9F2D61B5180030976A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C238DB52D61B51A0030976A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C238DBF2D61B51A0030976A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C238D992D61B5180030976A = {
+			isa = PBXGroup;
+			children = (
+				4C688AF62D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift */,
+				4C688AF72D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift */,
+				4C5DF3962D813D4F0024FA60 /* Member+CoreDataClass.swift */,
+				4C5DF36E2D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift */,
+				4C5DF36D2D81327A0024FA60 /* Member+CoreDataProperties.swift */,
+				4C5DF36F2D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift */,
+				4C238DA42D61B5180030976A /* SCHEDULER */,
+				4C238DBB2D61B51A0030976A /* SCHEDULERTests */,
+				4C238DC52D61B51A0030976A /* SCHEDULERUITests */,
+				4C238DA32D61B5180030976A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C238DA32D61B5180030976A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C238DA22D61B5180030976A /* SCHEDULER.app */,
+				4C238DB82D61B51A0030976A /* SCHEDULERTests.xctest */,
+				4C238DC22D61B51A0030976A /* SCHEDULERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C238DA12D61B5180030976A /* SCHEDULER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C238DCC2D61B51A0030976A /* Build configuration list for PBXNativeTarget "SCHEDULER" */;
+			buildPhases = (
+				4C238D9E2D61B5180030976A /* Sources */,
+				4C238D9F2D61B5180030976A /* Frameworks */,
+				4C238DA02D61B5180030976A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4C238DA42D61B5180030976A /* SCHEDULER */,
+			);
+			name = SCHEDULER;
+			packageProductDependencies = (
+			);
+			productName = SCHEDULER;
+			productReference = 4C238DA22D61B5180030976A /* SCHEDULER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C238DB72D61B51A0030976A /* SCHEDULERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C238DCF2D61B51A0030976A /* Build configuration list for PBXNativeTarget "SCHEDULERTests" */;
+			buildPhases = (
+				4C238DB42D61B51A0030976A /* Sources */,
+				4C238DB52D61B51A0030976A /* Frameworks */,
+				4C238DB62D61B51A0030976A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C238DBA2D61B51A0030976A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4C238DBB2D61B51A0030976A /* SCHEDULERTests */,
+			);
+			name = SCHEDULERTests;
+			packageProductDependencies = (
+			);
+			productName = SCHEDULERTests;
+			productReference = 4C238DB82D61B51A0030976A /* SCHEDULERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C238DC12D61B51A0030976A /* SCHEDULERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C238DD22D61B51A0030976A /* Build configuration list for PBXNativeTarget "SCHEDULERUITests" */;
+			buildPhases = (
+				4C238DBE2D61B51A0030976A /* Sources */,
+				4C238DBF2D61B51A0030976A /* Frameworks */,
+				4C238DC02D61B51A0030976A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C238DC42D61B51A0030976A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4C238DC52D61B51A0030976A /* SCHEDULERUITests */,
+			);
+			name = SCHEDULERUITests;
+			packageProductDependencies = (
+			);
+			productName = SCHEDULERUITests;
+			productReference = 4C238DC22D61B51A0030976A /* SCHEDULERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C238D9A2D61B5180030976A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4C238DA12D61B5180030976A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					4C238DB72D61B51A0030976A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4C238DA12D61B5180030976A;
+					};
+					4C238DC12D61B51A0030976A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4C238DA12D61B5180030976A;
+					};
+				};
+			};
+			buildConfigurationList = 4C238D9D2D61B5180030976A /* Build configuration list for PBXProject "SCHEDULER" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C238D992D61B5180030976A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4C238DA32D61B5180030976A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C238DA12D61B5180030976A /* SCHEDULER */,
+				4C238DB72D61B51A0030976A /* SCHEDULERTests */,
+				4C238DC12D61B51A0030976A /* SCHEDULERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C238DA02D61B5180030976A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C238DB62D61B51A0030976A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C238DC02D61B51A0030976A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C238D9E2D61B5180030976A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5DF3982D813D4F0024FA60 /* Member+CoreDataClass.swift in Sources */,
+				4C5DF3712D81327A0024FA60 /* Member+CoreDataProperties.swift in Sources */,
+				4C688AF82D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift in Sources */,
+				4C688AF92D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift in Sources */,
+				4C5DF3722D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift in Sources */,
+				4C5DF3742D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C238DB42D61B51A0030976A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C238DBE2D61B51A0030976A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C238DBA2D61B51A0030976A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C238DA12D61B5180030976A /* SCHEDULER */;
+			targetProxy = 4C238DB92D61B51A0030976A /* PBXContainerItemProxy */;
+		};
+		4C238DC42D61B51A0030976A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C238DA12D61B5180030976A /* SCHEDULER */;
+			targetProxy = 4C238DC32D61B51A0030976A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4C238DCA2D61B51A0030976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C238DCB2D61B51A0030976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4C238DCD2D61B51A0030976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SCHEDULER/SCHEDULER.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SCHEDULER/Preview Content\"";
+				DEVELOPMENT_TEAM = 3MSP5N8ST5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ANHOP.SCHEDULER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4C238DCE2D61B51A0030976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SCHEDULER/SCHEDULER.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SCHEDULER/Preview Content\"";
+				DEVELOPMENT_TEAM = 3MSP5N8ST5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ANHOP.SCHEDULER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4C238DD02D61B51A0030976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MSP5N8ST5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ANHOP.SCHEDULERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCHEDULER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SCHEDULER";
+			};
+			name = Debug;
+		};
+		4C238DD12D61B51A0030976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MSP5N8ST5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ANHOP.SCHEDULERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCHEDULER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SCHEDULER";
+			};
+			name = Release;
+		};
+		4C238DD32D61B51A0030976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MSP5N8ST5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ANHOP.SCHEDULERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SCHEDULER;
+			};
+			name = Debug;
+		};
+		4C238DD42D61B51A0030976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MSP5N8ST5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ANHOP.SCHEDULERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SCHEDULER;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C238D9D2D61B5180030976A /* Build configuration list for PBXProject "SCHEDULER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C238DCA2D61B51A0030976A /* Debug */,
+				4C238DCB2D61B51A0030976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C238DCC2D61B51A0030976A /* Build configuration list for PBXNativeTarget "SCHEDULER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C238DCD2D61B51A0030976A /* Debug */,
+				4C238DCE2D61B51A0030976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C238DCF2D61B51A0030976A /* Build configuration list for PBXNativeTarget "SCHEDULERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C238DD02D61B51A0030976A /* Debug */,
+				4C238DD12D61B51A0030976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C238DD22D61B51A0030976A /* Build configuration list for PBXNativeTarget "SCHEDULERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C238DD32D61B51A0030976A /* Debug */,
+				4C238DD42D61B51A0030976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C238D9A2D61B5180030976A /* Project object */;
+}
