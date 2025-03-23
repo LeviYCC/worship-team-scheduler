@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		4C5DF3712D81327A0024FA60 /* Member+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF36D2D81327A0024FA60 /* Member+CoreDataProperties.swift */; };
 		4C5DF3722D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF36F2D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift */; };
-		4C5DF3732D81327A0024FA60 /* WorshipTeamConfig+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF3702D81327A0024FA60 /* WorshipTeamConfig+CoreDataProperties.swift */; };
 		4C5DF3742D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF36E2D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift */; };
 		4C5DF3982D813D4F0024FA60 /* Member+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF3962D813D4F0024FA60 /* Member+CoreDataClass.swift */; };
-		4C5DF3992D813D4F0024FA60 /* WorshipTeamConfig+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DF3972D813D4F0024FA60 /* WorshipTeamConfig+CoreDataClass.swift */; };
+		4C688AF82D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C688AF62D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift */; };
+		4C688AF92D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C688AF72D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,9 @@
 		4C5DF36D2D81327A0024FA60 /* Member+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Member+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4C5DF36E2D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduledEvent+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4C5DF36F2D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduledEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4C5DF3702D81327A0024FA60 /* WorshipTeamConfig+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorshipTeamConfig+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4C5DF3962D813D4F0024FA60 /* Member+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Member+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4C5DF3972D813D4F0024FA60 /* WorshipTeamConfig+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorshipTeamConfig+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C688AF62D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorshipTeamConfig+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C688AF72D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorshipTeamConfig+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -90,12 +90,12 @@
 		4C238D992D61B5180030976A = {
 			isa = PBXGroup;
 			children = (
+				4C688AF62D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift */,
+				4C688AF72D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift */,
 				4C5DF3962D813D4F0024FA60 /* Member+CoreDataClass.swift */,
-				4C5DF3972D813D4F0024FA60 /* WorshipTeamConfig+CoreDataClass.swift */,
 				4C5DF36E2D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift */,
 				4C5DF36D2D81327A0024FA60 /* Member+CoreDataProperties.swift */,
 				4C5DF36F2D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift */,
-				4C5DF3702D81327A0024FA60 /* WorshipTeamConfig+CoreDataProperties.swift */,
 				4C238DA42D61B5180030976A /* SCHEDULER */,
 				4C238DBB2D61B51A0030976A /* SCHEDULERTests */,
 				4C238DC52D61B51A0030976A /* SCHEDULERUITests */,
@@ -258,10 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5DF3982D813D4F0024FA60 /* Member+CoreDataClass.swift in Sources */,
-				4C5DF3992D813D4F0024FA60 /* WorshipTeamConfig+CoreDataClass.swift in Sources */,
 				4C5DF3712D81327A0024FA60 /* Member+CoreDataProperties.swift in Sources */,
+				4C688AF82D86B3B800971608 /* WorshipTeamConfig+CoreDataClass.swift in Sources */,
+				4C688AF92D86B3B800971608 /* WorshipTeamConfig+CoreDataProperties.swift in Sources */,
 				4C5DF3722D81327A0024FA60 /* ScheduledEvent+CoreDataProperties.swift in Sources */,
-				4C5DF3732D81327A0024FA60 /* WorshipTeamConfig+CoreDataProperties.swift in Sources */,
 				4C5DF3742D81327A0024FA60 /* ScheduledEvent+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,12 +2,13 @@
 //  WorshipTeamConfig+CoreDataProperties.swift
 //  SCHEDULER
 //
-//  Created by Levi Y.C. Chow on 2025/3/12.
+//  Created by Levi Y.C. Chow on 2025/3/16.
 //
 //
 
 import Foundation
 import CoreData
+
 
 extension WorshipTeamConfig {
 
@@ -17,8 +18,12 @@ extension WorshipTeamConfig {
 
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
-    @NSManaged public var requiredRoles: Set<String>?
+    @NSManaged public var roles: String?
+    @NSManaged public var requiredRoles: String?
+    @NSManaged public var singerCount: Int16
 
 }
 
-extension WorshipTeamConfig: Identifiable { }
+extension WorshipTeamConfig : Identifiable {
+
+}

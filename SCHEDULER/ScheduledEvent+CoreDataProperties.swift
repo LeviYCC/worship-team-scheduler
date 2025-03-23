@@ -18,7 +18,25 @@ extension ScheduledEvent {
     @NSManaged public var id: UUID?
     @NSManaged public var date: Date?
     @NSManaged public var teamName: String?
-    @NSManaged public var assignedMembers: Set<Member>?
+    @NSManaged public var assignedMembers: String?
+    @NSManaged public var members: Set<Member>?
+
+}
+
+// MARK: Generated accessors for assignedMembers
+extension ScheduledEvent {
+
+    @objc(addMembersObject:)
+    @NSManaged public func addToMembers(_ value: Member)
+
+    @objc(removeMembersObject:)
+    @NSManaged public func removeFromMembers(_ value: Member)
+
+    @objc(addMembers:)
+    @NSManaged public func addToMembers(_ values: NSSet)
+
+    @objc(removeMembers:)
+    @NSManaged public func removeFromMembers(_ values: NSSet)
 
 }
 

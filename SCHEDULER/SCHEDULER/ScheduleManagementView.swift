@@ -20,30 +20,40 @@ struct ScheduleManagementView: View {
 
     @State private var selectedDate = Date()
     @State private var selectedTeam: WorshipTeamConfig?
-    @State private var assignedMembers: [String: Member] = [:] // 存儲角色對應的成員
+    @State private var assignedMembers: [String: Member] = [:]
     @State private var isShowingMemberPicker = false
     @State private var editingRole: String?
+    @State private var eventName: String = ""
+    @State private var conflicts: [String] = []
+    @State private var showingConflictAlert = false
+    @State private var isEditMode = false
+    @State private var editingEvent: ScheduledEvent?
 
     var body: some View {
         NavigationView {
             VStack {
                 Form {
-                    Section(header: Text("選擇活動日期")) {
+                    Section(header: Text("活動資訊")) {
+                        TextField("活動名稱", text: $eventName)
                         DatePicker("活動日期", selection: $selectedDate, displayedComponents: .date)
                     }
 
                     Section(header: Text("選擇團隊配置")) {
                         Picker("團隊", selection: $selectedTeam) {
                             Text("選擇團隊").tag(nil as WorshipTeamConfig?)
-                            ForEach(teams, id: \.self) { team in
+                            ForEach(teams, id: \ .self) { team in
                                 Text(team.name ?? "未知").tag(team as WorshipTeamConfig?)
                             }
+                        }
+                        .onChange(of: selectedTeam) {
+                            assignedMembers.removeAll()
                         }
                     }
 
                     if let selectedTeam = selectedTeam {
                         Section(header: Text("成員分配")) {
-                            ForEach(selectedTeam.requiredRoles?.components(separatedBy: ",") ?? [], id: \.self) { role in
+                            let requiredRoles = selectedTeam.requiredRoles?.components(separatedBy: ",") ?? []
+                            ForEach(requiredRoles, id: \ .self) { role in
                                 HStack {
                                     Text(role)
                                     Spacer()
@@ -62,19 +72,36 @@ struct ScheduleManagementView: View {
                         }
                     }
 
-                    Button("儲存排班") {
-                        saveSchedule()
+                    Button(isEditMode ? "更新排班" : "儲存排班") {
+                        checkConflicts()
                     }
-                    .disabled(selectedTeam == nil || assignedMembers.isEmpty)
+                    .disabled(selectedTeam == nil || eventName.isEmpty || assignedMembers.isEmpty)
                 }
 
-                Section(header: Text("已排班活動")) {
+                Section(header:
+                    HStack {
+                        Text("已排班活動")
+                        Spacer()
+                        Button("今天") {
+                            scrollToToday()
+                        }
+                    }
+                ) {
                     List {
                         ForEach(events) { event in
                             VStack(alignment: .leading) {
-                                Text(event.teamName ?? "未知團隊").font(.headline)
-                                Text("日期: \(event.date ?? Date(), formatter: dateFormatter)")
-                                Text("成員: \(event.assignedMembers ?? "無")").font(.subheadline)
+                                HStack {
+                                    Text(formatDate(event.date ?? Date()))
+                                        .font(.headline)
+                                    Text(event.teamName ?? "未知團隊")
+                                        .font(.subheadline)
+                                    Spacer()
+                                    Button("編輯") {
+                                        editEvent(event)
+                                    }
+                                }
+                                Text("成員: \(event.assignedMembers ?? "無")")
+                                    .font(.caption)
                             }
                         }
                         .onDelete(perform: deleteEvent)
@@ -84,46 +111,19 @@ struct ScheduleManagementView: View {
             .navigationTitle("排班管理")
             .sheet(isPresented: $isShowingMemberPicker) {
                 if let role = editingRole {
-                    MemberPickerView(role: role, members: members, selectedMember: { selected in
-                        assignedMembers[role] = selected
-                    })
+                    memberPickerView(role: role)
                 }
+            }
+            .alert(isPresented: $showingConflictAlert) {
+                Alert(
+                    title: Text("排班衝突警告"),
+                    message: Text("發現以下衝突:\n\(conflicts.joined(separator: "\n"))\n是否仍要儲存?"),
+                    primaryButton: .default(Text("仍要儲存")) {
+                        saveScheduleWithConflicts()
+                    },
+                    secondaryButton: .cancel(Text("取消"))
+                )
             }
         }
     }
-
-    // ✅ 儲存排班
-    private func saveSchedule() {
-        let newEvent = ScheduledEvent(context: viewContext)
-        newEvent.id = UUID()
-        newEvent.date = selectedDate
-        newEvent.teamName = selectedTeam?.name
-        newEvent.assignedMembers = assignedMembers.map { "\($0.key): \($0.value.name ?? "未知")" }.joined(separator: ",")
-        saveContext()
-    }
-
-    // ✅ 刪除排班
-    private func deleteEvent(at offsets: IndexSet) {
-        for index in offsets {
-            let event = events[index]
-            viewContext.delete(event)
-        }
-        saveContext()
-    }
-
-    // ✅ 儲存 Core Data 變更
-    private func saveContext() {
-        do {
-            try viewContext.save()
-        } catch {
-            print("❌ 儲存失敗: \(error.localizedDescription)")
-        }
-    }
 }
-
-// 日期格式
-private let dateFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .medium
-    return formatter
-}()
